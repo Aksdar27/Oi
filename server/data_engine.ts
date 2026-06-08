@@ -1,10 +1,9 @@
 import axios from "axios";
-import YahooFinance from "yahoo-finance2";
+import yahooFinance from "yahoo-finance2";
 import WebSocket from "ws";
 import { sendTelegramMessage } from "./telegram.js";
 import { addSystemError, systemState } from "./engine.js";
 
-const yahooFinance = new YahooFinance();
 
 export interface OHLC {
   timestamp: Date;
