@@ -61,7 +61,7 @@ export async function chatWithMechanic(message: string, history: any[]): Promise
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-pro",
+      model: "gemini-2.0-flash",
       contents: [
         ...formattedHistory,
         { role: "user", parts: [{ text: message }] }
